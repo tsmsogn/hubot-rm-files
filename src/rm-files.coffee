@@ -13,7 +13,6 @@
 
 Slack = require 'slack-node'
 moment = require 'moment'
-async = require 'async'
 util = require 'util'
 
 config =
