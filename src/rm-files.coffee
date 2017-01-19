@@ -49,4 +49,5 @@ module.exports = (robot) ->
             msg.send "Deleting #{file.title}"
             slack.api 'files.delete', { file: file.id }, (err, response) ->
               msg.send util.inspect(response, false, null)
+              return
         return
